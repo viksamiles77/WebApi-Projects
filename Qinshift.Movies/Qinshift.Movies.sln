@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Movies.API", "Qinshift.Movies.API\Qinshift.Movies.API.csproj", "{987DA5D7-0E34-4BC7-B790-2382D55AED77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshft.Movies.DataAccess", "Qinshft.Movies.DataAccess\Qinshft.Movies.DataAccess.csproj", "{173B1F36-E34E-411D-B8F2-0621B530D37C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Movies.DomainModels", "Qinshift.Movies.DomainModels\Qinshift.Movies.DomainModels.csproj", "{E7451455-4ADA-4AD6-A3D8-6ABAAF3DB199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Movies.DTOs", "Qinshift.Movies.DTOs\Qinshift.Movies.DTOs.csproj", "{E918F1C3-9340-4BA4-B914-E0E60E257130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qinshift.Movies.Services", "Qinshift.Movies.Sercices\Qinshift.Movies.Services.csproj", "{6A3091C5-331B-483C-9EEE-4B8999092B61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{987DA5D7-0E34-4BC7-B790-2382D55AED77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987DA5D7-0E34-4BC7-B790-2382D55AED77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987DA5D7-0E34-4BC7-B790-2382D55AED77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987DA5D7-0E34-4BC7-B790-2382D55AED77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173B1F36-E34E-411D-B8F2-0621B530D37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173B1F36-E34E-411D-B8F2-0621B530D37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173B1F36-E34E-411D-B8F2-0621B530D37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173B1F36-E34E-411D-B8F2-0621B530D37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7451455-4ADA-4AD6-A3D8-6ABAAF3DB199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7451455-4ADA-4AD6-A3D8-6ABAAF3DB199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7451455-4ADA-4AD6-A3D8-6ABAAF3DB199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7451455-4ADA-4AD6-A3D8-6ABAAF3DB199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E918F1C3-9340-4BA4-B914-E0E60E257130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E918F1C3-9340-4BA4-B914-E0E60E257130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E918F1C3-9340-4BA4-B914-E0E60E257130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E918F1C3-9340-4BA4-B914-E0E60E257130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3091C5-331B-483C-9EEE-4B8999092B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3091C5-331B-483C-9EEE-4B8999092B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3091C5-331B-483C-9EEE-4B8999092B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3091C5-331B-483C-9EEE-4B8999092B61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE7A1276-B0F6-4605-976B-5A35F4845976}
+	EndGlobalSection
+EndGlobal
