@@ -1,4 +1,4 @@
-﻿using Qinshift.Movies.DTOs;
+﻿using Qinshift.Movies.DTOs.Movie;
 
 namespace Qinshift.Movies.Services.Implementation
 {

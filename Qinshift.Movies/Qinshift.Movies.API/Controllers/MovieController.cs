@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Qinshift.Movies.DTOs;
+using Qinshift.Movies.DTOs.Movie;
 using Qinshift.Movies.Services.Implementation;
 
 namespace Qinshift.Movies.API.Controllers

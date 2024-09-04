@@ -1,6 +1,6 @@
 ﻿using Qinshift.Movies.DomainModels;
 using Qinshift.Movies.DomainModels.Enums;
-using Qinshift.Movies.DTOs;
+using Qinshift.Movies.DTOs.Movie;
 
 namespace Qinshift.Movies.Services.Helpers
 {

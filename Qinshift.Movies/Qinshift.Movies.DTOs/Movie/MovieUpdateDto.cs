@@ -1,7 +1,7 @@
 ﻿using Qinshift.Movies.DomainModels.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Qinshift.Movies.DTOs
+namespace Qinshift.Movies.DTOs.Movie
 {
     public class MovieUpdateDto
     {

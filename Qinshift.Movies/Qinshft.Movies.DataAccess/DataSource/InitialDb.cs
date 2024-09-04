@@ -152,6 +152,25 @@ namespace Qinshft.Movies.DataAccess.DataSource
                         Genre = GenreEnum.Drama
                     }
                 });
+
+            builder.Entity<User>()
+                .HasData(new List<User>
+                {
+                    new User {
+                        Id = 1,
+                        FirstName = "Viktor",
+                        LastName = "Mileski",
+                        UserName = "v_mileski",
+                        Password = "test123"
+                    },
+                    new User {
+                        Id = 2,
+                        FirstName = "Slave",
+                        LastName = "Ivanovski",
+                        UserName = "s_ivanovski",
+                        Password = "test123"
+                    },
+                });
         }
     }
 }

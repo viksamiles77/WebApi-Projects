@@ -1,4 +1,4 @@
-﻿namespace Qinshift.Movies.DTOs
+﻿namespace Qinshift.Movies.DTOs.Movie
 {
     public class MovieDto
     {

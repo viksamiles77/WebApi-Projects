@@ -1,6 +1,6 @@
 ﻿using Qinshft.Movies.DataAccess.Interfaces;
 using Qinshift.Movies.DomainModels;
-using Qinshift.Movies.DTOs;
+using Qinshift.Movies.DTOs.Movie;
 using Qinshift.Movies.Services.Helpers;
 
 namespace Qinshift.Movies.Services.Implementation
