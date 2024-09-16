@@ -5,16 +5,17 @@ namespace Qinshift.Movies.Services.Helpers
 {
     public class UserMapper
     {
-        public static UserDto ToUserShowDto(User user)
+        public static UserShowDto ToUserShowDto(User user)
         {
             if (user == null)
             {
                 return null;
             }
 
-            return new UserDto
+            return new UserShowDto
             {
-                UserName = user.UserName,
+                FirstName = user.FirstName,
+                UserName = user.UserName
             };
         }
     }
