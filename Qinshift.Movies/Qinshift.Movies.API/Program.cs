@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Qinshift.Movies.Services.Interfaces;
+using Serilog;
+
 
 namespace Qinshift.Movies.API
 {
@@ -16,8 +18,13 @@ namespace Qinshift.Movies.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            
             builder.Services.AddControllers();
+            builder.Host.UseSerilog((ctx, lc) =>
+            {
+                lc.WriteTo.File($"{DateTime.Now}_logs.txt");
+                lc.MinimumLevel.Debug();
+            });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(opt =>
