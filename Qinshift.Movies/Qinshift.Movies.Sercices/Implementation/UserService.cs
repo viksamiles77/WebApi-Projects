@@ -20,17 +20,17 @@ namespace Qinshift.Movies.Services.Implementation
             _userRepository = userRepository;
         }
 
-        //public List<UserShowDto> GetAllMovies()
-        //{
-        //    var users = _userRepository.GetAll();
-        //    var userListDto = new List<UserShowDto>();
-        //    foreach (var user in users)
-        //    {
-        //        var userShowDto = UserMapper.ToUserShowDto(user);
-        //        userListDto.Add(userShowDto);
-        //    }
-        //    return userListDto;
-        //}
+        public List<UserShowDto> GetAllUsers()
+        {
+            var users = _userRepository.GetAll();
+            var userListDto = new List<UserShowDto>();
+            foreach (var user in users)
+            {
+                var userShowDto = UserMapper.ToUserShowDto(user);
+                userListDto.Add(userShowDto);
+            }
+            return userListDto;
+        }
 
         public UserLoginResponseDto LoginUser(string username, string password)
         {
@@ -72,7 +72,7 @@ namespace Qinshift.Movies.Services.Implementation
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 UserName = user.UserName,
-                Token = tokenHandler.WriteToken(token) // Converting from SecurityToken object to string
+                Token = tokenHandler.WriteToken(token)
             };
 
             return userModel;
