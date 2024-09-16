@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Qinshift.Movies.DTOs.User;
 using Qinshift.Movies.Services.Interfaces;
+using Serilog;
 
 namespace Qinshift.Movies.API.Controllers
 {
@@ -16,18 +17,18 @@ namespace Qinshift.Movies.API.Controllers
             _userService = userService;
         }
 
-        //[HttpGet("all")]
-        //public IActionResult GetAllMovies()
-        //{
-        //    try
-        //    {
-        //        return Ok(_userService.GetAllUsers());
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-        //    }
-        //}
+        [HttpGet("all")]
+        public IActionResult GetAllUsers()
+        {
+            try
+            {
+                return Ok(_userService.GetAllUsers());
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
 
         [HttpPost("register")]
         [AllowAnonymous]
@@ -41,6 +42,7 @@ namespace Qinshift.Movies.API.Controllers
             }
             catch (Exception ex)
             {
+                Log.Error("Register new user failed.", ex);
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
@@ -56,6 +58,7 @@ namespace Qinshift.Movies.API.Controllers
             }
             catch (Exception ex)
             {
+                Log.Error("Error while login user.", ex);
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
